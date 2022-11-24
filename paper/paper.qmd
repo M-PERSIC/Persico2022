@@ -1,0 +1,109 @@
+---
+title: "Proof of concept Zstandard custom compression dictionary for FASTA files"
+format:
+  plos-pdf:
+    number-sections: false
+    journal:
+      # This is an identifier for the target journal: 
+      # from https://plos.org/resources/writing-center/ following submission guidelines link, the identifier is the part of the URL after https://journals.plos.org/<id>/s/submission-guidelines
+      id: plosbiology
+    include-in-header: |
+      % Remove comment for double spacing
+      % \usepackage{setspace} 
+      % \doublespacing
+author:
+  - name: Michael Persico
+    equal-contributor: false
+    affiliations:
+      - ref: aff1
+    notes: |
+      "Current Address: Dept/Program/Center, Institution Name, City, State, Country"
+    corresponding: false
+    email: correspondingauthor@institute.edu
+author-notes:
+  equal-contributor: These authors contributed equally to this work.
+  deceased: Deceased
+  group: Membership list can be found in the Acknowledgments sections
+affiliations:
+  - id: aff1
+    name: Department of Biology, Concordia University
+    city: Montreal
+    state: Quebec
+    country: Canada
+abstract: |
+  ## Background
+
+  Zstandard (Zstd) represents a lossless data compression algorithm that is highly configurable and is aimed at coupling high compression ratios with fast compression/decompression performance. Previous studies paired specific Zstd configurations with various file formats in bioinformatics to reduce total data volume. This paper presents a "training mode" pipeline, written in the Julia programming language, wherein a custom compression dictionary is generated from a sample FASTA set in order to explore further compression improvements.
+  
+  ## Results
+
+  ## Conclusions
+bibliography: bibliography.bib 
+---
+
+# Introduction
+
+The storage of biological data has represented a significant topic of research, with a number of challenges presented over subsequent generations of technological development, with current challenges discovered as the volume and complexity of data continues to increase[@d2018high;@li2014big].
+
+# Materials and methods 
+
+# Results
+
+# Discussion
+
+# Conclusion
+
+# Supporting information 
+
+::: {.supp}
+## S1 Fig. {#s1-fig}
+
+Bold the title sentence.
+
+Add descriptive text after the title of the item (optional).
+:::
+
+::: {.supp}
+## S2 Fig. {#s2-fig}
+
+Lorem ipsum.
+
+Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
+:::
+
+
+::: {.supp}
+## S1 File. {#s1-file}
+
+Lorem ipsum.
+
+:::
+
+::: {.supp}
+
+## S1 Video. {#s1-video}
+
+Lorem ipsum.
+
+Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
+:::
+
+::: {.supp}
+## S1 Appendix. {#s1-appendix}
+
+Lorem ipsum.
+
+Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
+:::
+
+::: {.supp}
+## S1 Table. {#s1-table}
+
+Lorem ipsum.
+
+Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
+:::
+
+# Acknowledgments
+
+I would like to express my sincere gratitude to Professor David Walsh for his advice that helped shape the research as it progressed; My friends and family that supported me throughout my studies; The Julia community for their support before and throughout the writing of this paper; The Quarto developers for producing the Quarto publishing system along with the PLOS template used in this paper; Luca Di Maio and contributors to the Distrobox tool for the ease of setting up the containerized development environments; Maximiliano Sandoval and contributors to the Citations app  for managing the paper's bibliography, and all other persons that had indirectly assisted through their programs and research.
