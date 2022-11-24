@@ -191,7 +191,7 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-  pdftitle={Proof of concept Zstandard custom compression dictionary for FASTA files},
+  pdftitle={Proof of concept Zstandard user-provided dictionary compression for FASTA files},
   pdfauthor={Michael Persico},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
@@ -204,8 +204,8 @@
 % Title must be 250 characters or less.
 \begin{flushleft}
 {\Large
-\textbf\newline{Proof of concept Zstandard custom compression dictionary
-for FASTA
+\textbf\newline{Proof of concept Zstandard user-provided dictionary
+compression for FASTA
 files} % Please use "sentence case" for title and headings (capitalize only the first word in a title (or heading), the first word in a subtitle (or subheading), and any proper nouns).
 }
 \newline
@@ -249,14 +249,16 @@ sections
 \hypertarget{background}{%
 \subsection{Background}\label{background}}
 
-Zstandard (Zstd) represents a lossless data compression algorithm that
+Zstandard (Zstd) represents a lossless data compression mechanism that
 is highly configurable and is aimed at coupling high compression ratios
-with fast compression/decompression performance. Previous studies paired
-specific Zstd configurations with various file formats in bioinformatics
-to reduce total data volume. This paper presents a ``training mode''
-pipeline, written in the Julia programming language, wherein a custom
-compression dictionary is generated from a sample FASTA set in order to
-explore further compression improvements.
+with fast compression/decompression performance. Previous studies have
+paired specific Zstd configurations with various file formats in
+bioinformatics to reduce total data volume. This paper presents a
+``training mode'' pipeline, written in the Julia programming language,
+wherein a custom compression dictionary is generated from a sample FASTA
+set in order to explore further compression improvements and compare
+them to the compression performance of Xz, Zlib, Bzip2, and Lz4
+compressors.
 
 \hypertarget{results}{%
 \subsection{Results}\label{results}}
@@ -276,6 +278,9 @@ increase\citep{d2018high, li2014big}.
 
 \hypertarget{materials-and-methods}{%
 \section{Materials and methods}\label{materials-and-methods}}
+
+A list of direct and indirect dependencies can be found in the
+repository's Manifest.toml file.
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
@@ -333,13 +338,14 @@ I would like to express my sincere gratitude to Professor David Walsh
 for his advice that helped shape the research as it progressed; My
 friends and family that supported me throughout my studies; The Julia
 community for their support before and throughout the writing of this
-paper; The Quarto developers for producing the Quarto publishing system
-along with the PLOS template used in this paper; Luca Di Maio and
-contributors to the Distrobox tool for the ease of setting up the
-containerized development environments; Maximiliano Sandoval and
-contributors to the Citations app for managing the paper's bibliography,
-and all other persons that had indirectly assisted through their
-programs and research.
+paper; The Quarto developers for producing the Quarto publishing
+system\citep{Allaire_Quarto_2022} along with the PLOS template used for
+this paper; Luca Di Maio and contributors to the Distrobox tool for the
+ease of setting up the containerized development
+environments\citep{maio}; Maximiliano Sandoval and contributors to the
+Citations app for managing the paper's bibliography\citep{sandoval}, and
+all other persons that had indirectly assisted through their programs
+and research.
 
 
 \nolinenumbers

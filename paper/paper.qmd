@@ -1,5 +1,5 @@
 ---
-title: "Proof of concept Zstandard custom compression dictionary for FASTA files"
+title: "Proof of concept Zstandard user-provided dictionary compression for FASTA files"
 format:
   plos-pdf:
     number-sections: false
@@ -33,7 +33,7 @@ affiliations:
 abstract: |
   ## Background
 
-  Zstandard (Zstd) represents a lossless data compression algorithm that is highly configurable and is aimed at coupling high compression ratios with fast compression/decompression performance. Previous studies paired specific Zstd configurations with various file formats in bioinformatics to reduce total data volume. This paper presents a "training mode" pipeline, written in the Julia programming language, wherein a custom compression dictionary is generated from a sample FASTA set in order to explore further compression improvements.
+  Zstandard (Zstd) represents a lossless data compression mechanism that is highly configurable and is aimed at coupling high compression ratios with fast compression/decompression performance. Previous studies have paired specific Zstd configurations with various file formats in bioinformatics to reduce total data volume. This paper presents a "training mode" pipeline, written in the Julia programming language, wherein a custom compression dictionary is generated from a sample FASTA set in order to explore further compression improvements and compare them to the compression performance of Xz, Zlib, Bzip2, and Lz4 compressors.
   
   ## Results
 
@@ -46,6 +46,8 @@ bibliography: bibliography.bib
 The storage of biological data has represented a significant topic of research, with a number of challenges presented over subsequent generations of technological development, with current challenges discovered as the volume and complexity of data continues to increase[@d2018high;@li2014big].
 
 # Materials and methods 
+
+A list of direct and indirect dependencies can be found in the repository's Manifest.toml file.
 
 # Results
 
@@ -106,4 +108,4 @@ Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh.
 
 # Acknowledgments
 
-I would like to express my sincere gratitude to Professor David Walsh for his advice that helped shape the research as it progressed; My friends and family that supported me throughout my studies; The Julia community for their support before and throughout the writing of this paper; The Quarto developers for producing the Quarto publishing system along with the PLOS template used in this paper; Luca Di Maio and contributors to the Distrobox tool for the ease of setting up the containerized development environments; Maximiliano Sandoval and contributors to the Citations app  for managing the paper's bibliography, and all other persons that had indirectly assisted through their programs and research.
+I would like to express my sincere gratitude to Professor David Walsh for his advice that helped shape the research as it progressed; My friends and family that supported me throughout my studies; The Julia community for their support before and throughout the writing of this paper; The Quarto developers for producing the Quarto publishing system[@Allaire_Quarto_2022] along with the PLOS template used for this paper; Luca Di Maio and contributors to the Distrobox tool for the ease of setting up the containerized development environments[@maio]; Maximiliano Sandoval and contributors to the Citations app for managing the paper's bibliography[@sandoval], and all other persons that had indirectly assisted through their programs and research.
