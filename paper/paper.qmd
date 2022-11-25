@@ -33,7 +33,7 @@ affiliations:
 abstract: |
   ## Background
 
-  Zstandard (Zstd) represents a lossless data compression mechanism that is highly configurable and is aimed at coupling high compression ratios with fast compression/decompression performance. Previous studies have paired specific Zstd configurations with various file formats in bioinformatics to reduce total data volume. This paper presents a "training mode" pipeline, written in the Julia programming language, wherein a custom compression dictionary is generated from a sample FASTA set in order to explore further compression improvements and compare them to the compression performance of Xz, Zlib, Bzip2, and Lz4 compressors.
+  Zstandard (Zstd) represents a universal, lossless data compression mechanism that is highly configurable and is aimed at coupling high compression ratios with fast compression/decompression performance. Previous studies have paired specific Zstd configurations with various file formats in bioinformatics to reduce total data volume. This paper presents a "training mode" pipeline, written in the Julia programming language, wherein a custom compression dictionary is generated from a sample FASTA set in order to explore further compression improvements and compare them to the compression performance of Xz, Zlib, Bzip2, and Lz4 universal compressors.
   
   ## Results
 
@@ -43,11 +43,14 @@ bibliography: bibliography.bib
 
 # Introduction
 
-The storage of biological data has represented a significant topic of research, with a number of challenges presented over subsequent generations of technological development, with current challenges discovered as the volume and complexity of data continues to increase[@d2018high;@li2014big].
+The explosion of biological data has represented a significant topic of research, with a number of challenges presented over subsequent generations of technological development in regards to the management of  the increasing volume and complexity of data[@d2018high;@li2014big]. In response, emerging trends in data management have lead to the development of novel, scalable methods for the efficient transmission and storage of large amounts of data[@sais2022intelligent]. With a potentially exponential quantity of files, datasets, and other data resources to be handled, data compression represents a method for reducing overall resource size by encoding the original data into a compact form, thus helping to ease storage requirements [@jayasankar2021survey]. Research into data compression in the context of biological data began to pick up near the turn of the 21st century as universal compression algorithms at the time were not considered ideal for compressing DNA or RNA sequence data well, which led to the introduction of purpose-built algorithms that addressed the unique attributes of genomics data[@grumbach1994new]. At the same time, new file formats were introduced, either text-based or binary-based, for more accurate structuring and representation of biological data, complementing new software tools[@lipman1985rapid;@mills2014common].
+
+The FASTA file format is a legacy of the original FASTA program from 1985 for finding sequence similarities with a query sequence[@lipman1985rapid]. Each file can possess multiple sequences, each paired with a description line distinguished with a ">" symbol followed by arbitary text, usually a name and summary description, on the same line. It is a commonly supported file format in bioinformatics and has been the target for optimized data compressors in competition with one another. The DELIMINATE lossless algorithm was first proposed in 2012, wherein header and sequence data are separated into DELIM-1 and DELIM-2 variants and a two-phase process is pursued involving delta encoding, progressive elimination of nucleotide characters, and 7-Zip archiving[@mohammed2012deliminate]. The claims of better compression/decompression performance of FASTA files were soon rivaled by the introduction of the MFCompress tool, again separating headers and sequence data but instead relying on probabilistic models to encode the data[@pinho2014mfcompress], which was countered by the Nucleotide Archival Format, a novel file format which is noteworthy in this context for the inclusion a Zstandard compression step[@kryukov2019nucleotide].
+
 
 # Materials and methods 
 
-A list of direct and indirect dependencies can be found in the repository's Manifest.toml file.
+A list of all direct and indirect dependencies can be found in the repository's Manifest.toml file.
 
 # Results
 
