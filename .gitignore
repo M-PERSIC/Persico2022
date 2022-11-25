@@ -338,3 +338,7 @@ TSWLatexianTemp*
 *.glstex
 
 # End of https://www.toptal.com/developers/gitignore/api/julia,latex
+
+# Custom - ignore all dotfiles
+.*
+!.gitignore
