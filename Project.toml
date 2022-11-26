@@ -4,6 +4,7 @@ authors = ["Michael Persico <michael.a.persico@gmail.com>"]
 version = "0.1.0"
 
 [deps]
+ArtifactUtils = "8b73e784-e7d8-4ea5-973d-377fed4e3bce"
 BioSequences = "7e6ae17a-c86d-528c-b3b9-7f778a29fe59"
 CodecBzip2 = "523fee87-0ab8-5b00-afb7-3ecf72e48cfd"
 CodecLz4 = "5ba52731-8f18-5e0d-9241-30f10d1ec561"
@@ -16,6 +17,7 @@ TranscodingStreams = "3bb67fe8-82b1-5028-8e26-92a6c54297fa"
 VegaLite = "112f6efa-9a02-5b7d-90c0-432ed331239a"
 
 [compat]
+ArtifactUtils = "0.2.2"
 BioSequences = "3.1.1"
 CodecBzip2 = "0.7.2"
 CodecLz4 = "0.4.0"
