@@ -1,6 +1,5 @@
 [ecoli_MS_200]
 git-tree-sha1 = "d5d5a489adf2aa66e569a617a1c769c893d57a1d"
-lazy = true
 
     [[ecoli_MS_200.download]]
     sha256 = "fa5271b9bc1aba277cf10ac6bb2d15cbf8d228bb2bed0a4d05d266599a92ef6d"
