@@ -254,8 +254,8 @@ standard and implementation that is highly configurable and is aimed at
 coupling high compression ratios with fast compression/decompression
 performance. Previous studies have paired specific Zstd configurations
 with various file formats in bioinformatics to reduce total data volume.
-This paper presents a ``training mode'' pipeline, written in the Julia
-programming language, wherein a custom compression dictionary is
+This paper presents a primitive ``training mode'' model, written in the
+Julia programming language, wherein a custom compression dictionary is
 generated from a sample FASTA set in order to explore further
 compression improvements and compare them to the compression performance
 of Xz, Zlib, Bzip2, and Lz4 universal compressors.
@@ -345,8 +345,15 @@ several alternative lossless compressors for select datasets.
 \hypertarget{materials-and-methods}{%
 \section{Materials and methods}\label{materials-and-methods}}
 
-A list of all direct and indirect dependencies can be found in the
-repository's Manifest.toml file.
+For the model implementation, Julia was chosen as there is package
+support for working with sequence data as well as for trivial
+transcoding of compressed or decompressed data via the
+TranscodingStreams package wherein compression algorithm implementations
+are loaded as codec I/O streams\citep{sato}. A list of all direct
+dependencies can be found in the repository's Project.toml file. The
+Julia implementation operates by first unloading a tarball containing
+the set of FASTA training files into an artifact, or life-cycled
+datastore.
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
@@ -354,8 +361,23 @@ repository's Manifest.toml file.
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
 
-\hypertarget{conclusion}{%
-\section{Conclusion}\label{conclusion}}
+The provided FASTA training dataset was retrieved from a set of
+\textit{E.coli} MS 200-1 strain genomic scaffolds from a whole genome
+shotgun run\citep{ncbi}. Sampling a single organism may allow for
+additional compression/decompression improvements as the sequence data
+could possess repeating patterns unique to that individual's or species'
+genome that are recognized and added to the Zstd dictionary during
+training. The FASTA files themselves may bear similarity with one
+another in the same set, such as each file being of similar length.
+Simultaneously, the Zstd dictionary may not achieve comparable
+compression/decompression performance when attempted on more dissimilar
+sequence data. Portability of Zstd dictionaries, in the sense of being
+universally applicable across all sequence data, could be weighed
+against generating dedicated dictionaries for specific datasets
+depending on the storage requirements. Zstd parameters were kept
+default, though they can be manually assigned, including advanced
+compression options like compression job size or selecting from 22
+predefined compression levels\citep{facebook}.
 
 \hypertarget{supporting-information}{%
 \section{Supporting information}\label{supporting-information}}
