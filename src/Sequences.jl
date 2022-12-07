@@ -15,7 +15,7 @@ using StatsBase
 
 
 """
-Generate a Random FASTA file with a random DNA sequence length from range 1 to length
+Generate FASTA formatted record with a random DNA sequence with a random length between two bounds
 """
 function FASTA_DNA_generate(min_length::Int, max_length::Int)
     # Generate random DNA sequence
@@ -26,23 +26,23 @@ function FASTA_DNA_generate(min_length::Int, max_length::Int)
 end
 
 """
-Generate a Random FASTA file with a random RNA sequence length from range 1 to length
+Generate FASTA formatted record with a random RNA sequence with a random length between two bounds
 """
 function FASTA_RNA_generate(min_length::Int, max_length::Int)
-    # Generate random DNA sequence
+    # Generate random RNA sequence
     seq = BioSequences.randrnaseq(rand(min_length:max_length))
-    # Convert DNA sequence to FASTA format
+    # Convert RNA sequence to FASTA format
     rec = FASTA.Record("seq", seq)
     return rec.data
 end
 
 """
-Generate a Random FASTA file with a random amino acid sequence length from range 1 to length
+Generate FASTA formatted record with a random amino acid sequence with a random length between two bounds
 """
 function FASTA_AA_generate(min_length::Int, max_length::Int)
-    # Generate random DNA sequence
+    # Generate random AA sequence
     seq = BioSequences.randaaseq(rand(min_length:max_length))
-    # Convert DNA sequence to FASTA format
+    # Convert AA sequence to FASTA format
     rec = FASTA.Record("seq", seq)
     return rec.data
 end

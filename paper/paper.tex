@@ -345,15 +345,42 @@ several alternative lossless compressors for select datasets.
 \hypertarget{materials-and-methods}{%
 \section{Materials and methods}\label{materials-and-methods}}
 
-For the model implementation, Julia was chosen as there is package
-support for working with sequence data as well as for trivial
-transcoding of compressed or decompressed data via the
-TranscodingStreams package wherein compression algorithm implementations
-are loaded as codec I/O streams\citep{sato}. A list of all direct
-dependencies can be found in the repository's Project.toml file. The
-Julia implementation operates by first unloading a tarball containing
-the set of FASTA training files into an artifact, or life-cycled
-datastore.
+All resources for the paper are included in the public Github repository
+at github.com/M-PERSIC/Persico2022.git.
+
+The model contains two pipelines, one for Zstd custom dictionary
+generation and another for generating transcoded compression data using
+Bzip2, Xz, zLib, and Zstd compressors, with a general overview in
+Fig~\ref{fig-model}. Julia was chosen as there is package support for
+working with sequence data as well as for trivial transcoding of
+compressed or decompressed data via TranscodingStreams.jl wherein
+compression algorithm implementations are loaded as codecs\citep{sato}.
+A list of all direct dependencies can be found in the repository's
+Project.toml file. The Julia implementation operates by first unloading
+a tarball containing the set of FASTA training files into a Julia
+artifact, or life-cycled datastore. The files are plugged into Zstd's
+Dictionary API to generate a custom dictionary specific to that dataset.
+Random FASTA data is generated using BioSequences.jl\citep{biosequences}
+and FASTX.jl\citep{fastx} APIs which is then transcoded into compressed
+formats via the CodecBzip2.jl\citep{codecbzip2},
+CodecXz.jl\citep{codecxz}, CodecZlib.jl\citep{codeczlib}, and
+CodecZstd.jl\citep{codeczstd} codecs for comparative analysis. Both
+dictionary-based and default Zstd compression are applied to determine
+if the former desmontrates a significant reduction in data size.
+
+\begin{figure}
+
+{\centering \includegraphics{/var/home/mpersico/distrobox/ubuntu-zstd/Persico2022/assets/figures/Compression_Pipeline_Model.png}
+
+}
+
+\caption{\label{fig-model}Overview of the Julia implementation for the
+compression model. \textbf{A}, Custom dictionary generation via an Julia
+artifact of FASTA files plugged into the Zstd Dictionary API.
+\textbf{B}, Transcoding randomly generated FASTA formatted data using
+TranscodingStreams.jl\citep{sato} compression codecs.}
+
+\end{figure}
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
@@ -375,7 +402,7 @@ sequence data. Portability of Zstd dictionaries, in the sense of being
 universally applicable across all sequence data, could be weighed
 against generating dedicated dictionaries for specific datasets
 depending on the storage requirements. Zstd parameters were kept
-default, though they can be manually assigned, including advanced
+default, though they can be manually altered, including advanced
 compression options like compression job size or selecting from 22
 predefined compression levels\citep{facebook}.
 
