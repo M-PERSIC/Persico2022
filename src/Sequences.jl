@@ -1,6 +1,6 @@
 """
 Set of functions that allow for generating FASTA formatted data for running compression
-tests using Xz, Bzip2, Zlib, and Zstd compressors
+tests using Xz, Bzip2, Zlib, and Zstd compressors.
 """
 
 using FASTX
@@ -11,7 +11,7 @@ using CodecXz
 using CodecBzip2
 using CodecZlib
 using CodecZstd
-using StatsBase
+using Pkg.Artifacts
 
 
 """
@@ -50,18 +50,14 @@ end
 """
 Generate compression size information from randomly generated FASTA data
 """
-function compression_tests(type::Symbol, 
-    files::Int, 
-    min_length::Int, 
-    max_length::Int,
-    )
+function compression_tests(type::Symbol, files::Int, min_length::Int, max_length::Int, artifact::String)
 
     size_df = DataFrame(
         type = Symbol[],
         size = Int64[],
     )
+
     for i = 1:files
-        
         # Can generate either DNA, RNA, or amino acid sequence data
         if type == :DNA 
             data = FASTA_DNA_generate(min_length, max_length) 
@@ -82,8 +78,19 @@ function compression_tests(type::Symbol,
         push!(size_df, [:Xz, data_xz_compressed])
         data_zlib_compressed = sizeof(transcode(ZlibCompressor, data))
         push!(size_df, [:Zlib, data_zlib_compressed])
-        data_zstd_compressed = sizeof(transcode(ZstdCompressor, data))
-        push!(size_df, [:Zstd_default, data_zstd_compressed])
+        data_zstd_default_compressed = sizeof(transcode(ZstdCompressor, data))
+        push!(size_df, [:Zstd_default, data_zstd_default_compressed])
+
+        # Train, load custom Zstd dictionary
+        dict = create_dictionary(artifact"ecoli_MS_200")
+        cstream = create_cstream()
+        load_dictionary(cstream, dict)
+        data_zstd_dict_compressed = sizeof(transcode(ZstdCompressor, data))
+        push!(size_df, [:Zstd_dict, data_zstd_dict_compressed])
+
+        # Clear custom dictionary from CodecZstd for rerun if desired
+        rm("dictionary")
+        CodecZstd.reset!(cstream, 0)
     end
     return size_df
 end

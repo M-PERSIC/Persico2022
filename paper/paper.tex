@@ -192,7 +192,7 @@
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
   pdftitle={Exploring Zstandard user-provided dictionary compression for FASTA files},
-  pdfauthor={Michael Persico},
+  pdfauthor={Michael A. Persico},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
@@ -211,7 +211,7 @@ files} % Please use "sentence case" for title and headings (capitalize only the 
 \newline
 \\
 % Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
-Michael Persico\textsuperscript{1}
+Michael A. Persico\textsuperscript{1}
 \\
 \bigskip
 \textbf{1} Department of Biology, Concordia
@@ -346,7 +346,8 @@ several alternative lossless compressors for select datasets.
 \section{Materials and methods}\label{materials-and-methods}}
 
 All resources for the paper are included in the public Github repository
-at github.com/M-PERSIC/Persico2022.git.
+at
+\href{https://www.github.com/M-PERSIC/Persico2022.git}{github.com/M-PERSIC/Persico2022.git}.
 
 The model contains two pipelines, one for Zstd custom dictionary
 generation and another for generating transcoded compression data using
@@ -359,14 +360,18 @@ A list of all direct dependencies can be found in the repository's
 Project.toml file. The Julia implementation operates by first unloading
 a tarball containing the set of FASTA training files into a Julia
 artifact, or life-cycled datastore. The files are plugged into Zstd's
-Dictionary API to generate a custom dictionary specific to that dataset.
-Random FASTA data is generated using BioSequences.jl\citep{biosequences}
-and FASTX.jl\citep{fastx} APIs which is then transcoded into compressed
-formats via the CodecBzip2.jl\citep{codecbzip2},
-CodecXz.jl\citep{codecxz}, CodecZlib.jl\citep{codeczlib}, and
-CodecZstd.jl\citep{codeczstd} codecs for comparative analysis. Both
-dictionary-based and default Zstd compression are applied to determine
-if the former desmontrates a significant reduction in data size.
+training mode, via the Zstd command line interface --train option, to
+generate a custom dictionary specific to that dataset. Subsequent
+dictionary manipulation in Julia is based on an experimental
+CodecZstd.jl branch that includes functions that wrap the Zstd
+Dictionary API\citep{kittisopikul}. Random FASTA data is generated using
+BioSequences.jl\citep{biosequences} and FASTX.jl\citep{fastx} APIs which
+is then transcoded into compressed formats via the
+CodecBzip2.jl\citep{codecbzip2}, CodecXz.jl\citep{codecxz},
+CodecZlib.jl\citep{codeczlib}, and CodecZstd.jl\citep{codeczstd} codecs
+for comparative analysis. Both dictionary-based and default Zstd
+compression are applied to determine if the former desmontrates a
+significant reduction in data size.
 
 \begin{figure}
 
@@ -405,6 +410,28 @@ depending on the storage requirements. Zstd parameters were kept
 default, though they can be manually altered, including advanced
 compression options like compression job size or selecting from 22
 predefined compression levels\citep{facebook}.
+
+Zstd's multifarious design warrants further research in how tuning the
+implementation by altering available options (block size, compression
+level,\ldots) that might influence compression performance. The
+development of novel data toolsets have utilized Zstd in unique ways.
+Aside from the Nucleotide Archival Format, FASTAFS was recently
+introduced as a filesystem in userspace (FUSE) toolkit wherein FASTA
+files are pooled into a virtualization abstraction layer that archives
+the set of data synced with its metadata, generating a high-level
+interface for accessing and storing FASTA data\citep{fastafs}. The
+zstd-seekable compression library is an embedded component that keeps
+the FASTAFS archive compressed for storage reduction purposes, and it
+represents an alternative compressed data format that deviates from
+Zstandard, albeit in a compatible manner, that allows for partial
+decompression of subranges of data\citep{facebook}. This is achieved via
+independently compressed/decompressed Zstd frames, which FASTAFS
+exploits for fast random access to FASTA files by decompressing only
+data of interest. Further areas of research for general lossless data
+compression in the context of biological data could include exploring
+other properties like compression/decompression speed performance,
+meaning how fast data transcoding occurs, or piloting proof-of-concept
+algorithms that attempt novel strategies.
 
 \hypertarget{supporting-information}{%
 \section{Supporting information}\label{supporting-information}}
@@ -450,10 +477,12 @@ consectetur pellentesque.
 \section{Acknowledgments}\label{acknowledgments}}
 
 I would like to express my sincere gratitude to Professor David Walsh
-for his advice that helped shape the research as it progressed; My
-friends and family that supported me throughout my studies; The Julia
-community for their support before and throughout the writing of this
-paper; The Quarto developers for producing the Quarto publishing
+for teaching the bioinformatics course; My friends and family that
+supported me throughout my studies; The Julia community for their
+support before and throughout the writing of this paper; Mark
+Kittisopikul for developing the CodecZstd.jl
+\#dictionary\_and\_parameters branch for Zstd dictionary functions; The
+Quarto developers for producing the Quarto publishing
 system\citep{Allaire_Quarto_2022} along with the PLOS template used for
 this paper; Luca Di Maio and contributors to the Distrobox tool for the
 ease of setting up the containerized development
@@ -461,6 +490,11 @@ environments\citep{maio}; Maximiliano Sandoval and contributors to the
 Citations app for managing the paper's bibliography\citep{sandoval}, and
 all other persons that had indirectly assisted through their programs
 and research.
+
+\hypertarget{conflict-of-interest}{%
+\section{Conflict of interest}\label{conflict-of-interest}}
+
+The author declares no conflict of interest.
 
 
 \nolinenumbers
