@@ -361,21 +361,19 @@ Project.toml file. The Julia implementation operates by first unloading
 a tarball containing the set of FASTA training files into a Julia
 artifact, or life-cycled datastore. The files are plugged into Zstd's
 training mode, via the Zstd command line interface --train option, to
-generate a custom dictionary specific to that dataset. Subsequent
-dictionary manipulation in Julia is based on an experimental
-CodecZstd.jl branch that includes functions that wrap the Zstd
-Dictionary API\citep{kittisopikul}. Random FASTA data is generated using
-BioSequences.jl\citep{biosequences} and FASTX.jl\citep{fastx} APIs which
-is then transcoded into compressed formats via the
-CodecBzip2.jl\citep{codecbzip2}, CodecXz.jl\citep{codecxz},
-CodecZlib.jl\citep{codeczlib}, and CodecZstd.jl\citep{codeczstd} codecs
-for comparative analysis. Both dictionary-based and default Zstd
-compression are applied to determine if the former desmontrates a
-significant reduction in data size.
+generate a custom dictionary specific to that dataset that is then
+plugged again into the CLI for data compression. Random FASTA data is
+generated using BioSequences.jl\citep{biosequences} and
+FASTX.jl\citep{fastx} APIs which is then transcoded into compressed
+formats via the CodecBzip2.jl\citep{codecbzip2},
+CodecXz.jl\citep{codecxz}, CodecZlib.jl\citep{codeczlib}, and
+CodecZstd.jl\citep{codeczstd} codecs for comparative analysis. Both
+dictionary-based and default Zstd compression are applied to determine
+if the former results in a significant reduction of overall data size.
 
 \begin{figure}
 
-{\centering \includegraphics{/var/home/mpersico/distrobox/ubuntu-zstd/Persico2022/assets/figures/Compression_Pipeline_Model.png}
+{\centering \includegraphics{/var/home/mpersico/distrobox/ubuntu-zstd/Persico2022/assets/diagrams/Compression_Model_Overview.png}
 
 }
 
@@ -389,6 +387,20 @@ TranscodingStreams.jl\citep{sato} compression codecs.}
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
+
+\begin{figure}
+
+{\centering \includegraphics{/var/home/mpersico/distrobox/ubuntu-zstd/Persico2022/assets/plots/Compression_Performance_Boxplot.png}
+
+}
+
+\caption{\label{fig-performance}Average FASTA formatted data size
+(bytes) following Bzip2, Xz, Zlib, default Zstd and dictionary-based
+Zstd compression. \emph{Escherichia coli} MS 200-1 (NZ\_ADUC00000000)
+artifact for Zstd dictionary generation. Randomized DNA sequences within
+the range of 100 000 to 150 000 base pairs.}
+
+\end{figure}
 
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
@@ -433,8 +445,8 @@ other properties like compression/decompression speed performance,
 meaning how fast data transcoding occurs, or piloting proof-of-concept
 algorithms that attempt novel strategies.
 
-\hypertarget{supporting-information}{%
-\section{Supporting information}\label{supporting-information}}
+\hypertarget{supplementary-information}{%
+\section{Supplementary information}\label{supplementary-information}}
 
 \paragraph*{S1 Fig.}
 \label{s1-fig}
@@ -443,31 +455,6 @@ of the item (optional).
 
 \paragraph*{S2 Fig.}
 \label{s2-fig}
-{\textbf{Lorem ipsum.}} Maecenas convallis mauris sit amet sem ultrices
-gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas
-ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus
-consectetur pellentesque.
-
-\paragraph*{S1 File.}
-\label{s1-file}
-{\textbf{Lorem ipsum.}}
-
-\paragraph*{S1 Video.}
-\label{s1-video}
-{\textbf{Lorem ipsum.}} Maecenas convallis mauris sit amet sem ultrices
-gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas
-ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus
-consectetur pellentesque.
-
-\paragraph*{S1 Appendix.}
-\label{s1-appendix}
-{\textbf{Lorem ipsum.}} Maecenas convallis mauris sit amet sem ultrices
-gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas
-ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus
-consectetur pellentesque.
-
-\paragraph*{S1 Table.}
-\label{s1-table}
 {\textbf{Lorem ipsum.}} Maecenas convallis mauris sit amet sem ultrices
 gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas
 ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus

@@ -55,11 +55,13 @@ Common bioinformatics file formats often include a set structure with the expres
 
 All resources for the paper are included in the public Github repository at [github.com/M-PERSIC/Persico2022.git](https://www.github.com/M-PERSIC/Persico2022.git).
 
-The model contains two pipelines, one for Zstd custom dictionary generation and another for generating transcoded compression data using Bzip2, Xz, zLib, and Zstd compressors, with a general overview in @fig-model. Julia was chosen as there is package support for working with sequence data as well as for trivial transcoding of compressed or decompressed data via TranscodingStreams.jl wherein compression algorithm implementations are loaded as codecs[@sato]. A list of all direct dependencies can be found in the repository's Project.toml file. The Julia implementation operates by first unloading a tarball containing the set of FASTA training files into a Julia artifact, or life-cycled datastore. The files are plugged into Zstd's training mode, via the Zstd command line interface --train option, to generate a custom dictionary specific to that dataset. Subsequent dictionary manipulation in Julia is based on an experimental CodecZstd.jl branch that includes functions that wrap the Zstd Dictionary API[@kittisopikul]. Random FASTA data is generated using BioSequences.jl[@biosequences] and FASTX.jl[@fastx] APIs which is then transcoded into compressed formats via the CodecBzip2.jl[@codecbzip2], CodecXz.jl[@codecxz], CodecZlib.jl[@codeczlib], and CodecZstd.jl[@codeczstd] codecs for comparative analysis. Both dictionary-based and default Zstd compression are applied to determine if the former desmontrates a significant reduction in data size.
+The model contains two pipelines, one for Zstd custom dictionary generation and another for generating transcoded compression data using Bzip2, Xz, zLib, and Zstd compressors, with a general overview in @fig-model. Julia was chosen as there is package support for working with sequence data as well as for trivial transcoding of compressed or decompressed data via TranscodingStreams.jl wherein compression algorithm implementations are loaded as codecs[@sato]. A list of all direct dependencies can be found in the repository's Project.toml file. The Julia implementation operates by first unloading a tarball containing the set of FASTA training files into a Julia artifact, or life-cycled datastore. The files are plugged into Zstd's training mode, via the Zstd command line interface --train option, to generate a custom dictionary specific to that dataset that is then plugged again into the CLI for data compression. Random FASTA data is generated using BioSequences.jl[@biosequences] and FASTX.jl[@fastx] APIs which is then transcoded into compressed formats via the CodecBzip2.jl[@codecbzip2], CodecXz.jl[@codecxz], CodecZlib.jl[@codeczlib], and CodecZstd.jl[@codeczstd] codecs for comparative analysis. Both dictionary-based and default Zstd compression are applied to determine if the former results in a significant reduction of overall data size.
 
-![Overview of the Julia implementation for the compression model. **A**, Custom dictionary generation via an Julia artifact of FASTA files plugged into the Zstd Dictionary API. **B**, Transcoding randomly generated FASTA formatted data using TranscodingStreams.jl[@sato] compression codecs. ](/var/home/mpersico/distrobox/ubuntu-zstd/Persico2022/assets/figures/Compression_Pipeline_Model.png){#fig-model}
+![Overview of the Julia implementation for the compression model. **A**, Custom dictionary generation via an Julia artifact of FASTA files plugged into the Zstd Dictionary API. **B**, Transcoding randomly generated FASTA formatted data using TranscodingStreams.jl[@sato] compression codecs.](/var/home/mpersico/distrobox/ubuntu-zstd/Persico2022/assets/diagrams/Compression_Model_Overview.png){#fig-model}
 
 # Results
+
+![Average FASTA formatted data size (bytes) following Bzip2, Xz, Zlib, default Zstd and dictionary-based Zstd compression. *Escherichia coli* MS 200-1 (NZ_ADUC00000000) artifact for Zstd dictionary generation. Randomized DNA sequences within the range of 100 000 to 150 000 base pairs.](/var/home/mpersico/distrobox/ubuntu-zstd/Persico2022/assets/plots/Compression_Performance_Boxplot.png){#fig-performance}
 
 # Discussion
 
@@ -67,7 +69,7 @@ The provided FASTA training dataset was retrieved from a set of \textit{E.coli} 
 
 Zstd's multifarious design warrants further research in how tuning the implementation by altering available options (block size, compression level,...) that might influence compression performance. The development of novel data toolsets have utilized Zstd in unique ways. Aside from the Nucleotide Archival Format, FASTAFS was recently introduced as a filesystem in userspace (FUSE) toolkit wherein FASTA files are pooled into a virtualization abstraction layer that archives the set of data synced with its metadata, generating a high-level interface for accessing and storing FASTA data[@fastafs]. The zstd-seekable compression library is an embedded component that keeps the FASTAFS archive compressed for storage reduction purposes, and it represents an alternative compressed data format that deviates from Zstandard, albeit in a compatible manner, that allows for partial decompression of subranges of data[@facebook]. This is achieved via independently compressed/decompressed Zstd frames, which FASTAFS exploits for fast random access to FASTA files by decompressing only data of interest. Further areas of research for general lossless data compression in the context of biological data could include exploring other properties like compression/decompression speed performance, meaning how fast data transcoding occurs, or piloting proof-of-concept algorithms that attempt novel strategies.
 
-# Supporting information 
+# Supplementary information 
 
 ::: {.supp}
 ## S1 Fig. {#s1-fig}
@@ -85,38 +87,6 @@ Lorem ipsum.
 Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
 :::
 
-
-::: {.supp}
-## S1 File. {#s1-file}
-
-Lorem ipsum.
-
-:::
-
-::: {.supp}
-
-## S1 Video. {#s1-video}
-
-Lorem ipsum.
-
-Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
-:::
-
-::: {.supp}
-## S1 Appendix. {#s1-appendix}
-
-Lorem ipsum.
-
-Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
-:::
-
-::: {.supp}
-## S1 Table. {#s1-table}
-
-Lorem ipsum.
-
-Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
-:::
 
 # Acknowledgments
 

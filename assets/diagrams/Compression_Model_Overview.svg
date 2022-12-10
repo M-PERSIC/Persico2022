@@ -8,8 +8,8 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   sodipodi:docname="Compression_Pipeline_Model.svg"
-   inkscape:export-filename="Compression_Pipeline_Model.png"
+   sodipodi:docname="Compression_Model_Overview.svg"
+   inkscape:export-filename="Compression_Model_Overview.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -28,8 +28,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.49260384"
-     inkscape:cx="660.77439"
-     inkscape:cy="641.48911"
+     inkscape:cx="557.24292"
+     inkscape:cy="369.46525"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -135,46 +135,6 @@
          style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
          d="M 3,-3 0,0 3,3"
          id="path5057-2-0"
-         transform="rotate(180,0.125,0)"
-         sodipodi:nodetypes="ccc" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="Arrow1-09-4-5"
-       refX="0"
-       refY="0"
-       orient="auto-start-reverse"
-       inkscape:stockid="Arrow1"
-       markerWidth="4.0606604"
-       markerHeight="6.7071066"
-       viewBox="0 0 4.0606602 6.7071068"
-       inkscape:isstock="true"
-       inkscape:collect="always"
-       preserveAspectRatio="xMidYMid">
-      <path
-         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
-         d="M 3,-3 0,0 3,3"
-         id="path5057-2-0-0"
-         transform="rotate(180,0.125,0)"
-         sodipodi:nodetypes="ccc" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="Arrow1-09-5"
-       refX="0"
-       refY="0"
-       orient="auto-start-reverse"
-       inkscape:stockid="Arrow1"
-       markerWidth="4.0606604"
-       markerHeight="6.7071066"
-       viewBox="0 0 4.0606602 6.7071068"
-       inkscape:isstock="true"
-       inkscape:collect="always"
-       preserveAspectRatio="xMidYMid">
-      <path
-         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
-         d="M 3,-3 0,0 3,3"
-         id="path5057-2-8"
          transform="rotate(180,0.125,0)"
          sodipodi:nodetypes="ccc" />
     </marker>
@@ -360,7 +320,7 @@
     </marker>
     <marker
        style="overflow:visible"
-       id="Arrow1-09-4-5-9-8-0-5-10-4-1"
+       id="Arrow1-4-3"
        refX="0"
        refY="0"
        orient="auto-start-reverse"
@@ -374,7 +334,27 @@
       <path
          style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
          d="M 3,-3 0,0 3,3"
-         id="path5057-2-0-0-9-1-4-9-7-8-0"
+         id="path5057-47-6"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1-09-4-5-9-8-0-5-10-4-2-9"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path5057-2-0-0-9-1-4-9-7-8-9-3"
          transform="rotate(180,0.125,0)"
          sodipodi:nodetypes="ccc" />
     </marker>
@@ -398,13 +378,13 @@
     <text
        xml:space="preserve"
        style="font-size:16.1613px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';fill:#333333;stroke-width:2.08234;stroke-linejoin:round"
-       x="9.1226521"
+       x="24.159018"
        y="23.733208"
        id="text624"><tspan
          sodipodi:role="line"
          id="tspan622"
          style="stroke-width:2.08234"
-         x="9.1226521"
+         x="24.159018"
          y="23.733208">A</tspan></text>
     <text
        xml:space="preserve"
@@ -419,63 +399,59 @@
          y="24.182339">B</tspan></text>
     <path
        style="fill:#1a1a1a;stroke:#000000;stroke-width:1.15156;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#Arrow1)"
-       d="m 76.996864,111.25996 c 0,-14.650923 0,-13.720364 0,-13.720364 z"
+       d="m 92.03323,111.25996 c 0,-14.650923 0,-13.720364 0,-13.720364 z"
        id="path939" />
     <path
        style="fill:#1a1a1a;stroke:#000000;stroke-width:1.15156;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#Arrow1-09)"
        d="m 193.18784,98.73076 c 0,-14.650923 0,-13.720364 0,-13.720364 z"
        id="path939-5" />
     <path
-       style="fill:#1a1a1a;stroke:#000000;stroke-width:1.152;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#Arrow1-09-5)"
-       d="M 94.658731,207.96804 C 75.821755,187.81268 77.018193,189.09286 77.018193,189.09286 Z"
-       id="path939-5-6" />
-    <path
        style="fill:#1a1a1a;stroke:#000000;stroke-width:1.15156;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#Arrow1-09-4)"
        d="m 193.18784,132.42089 c 0,-14.65093 0,-13.72037 0,-13.72037 z"
        id="path939-5-5" />
     <path
-       style="fill:#1a1a1a;stroke:#000000;stroke-width:1.152;stroke-linejoin:bevel;stroke-dasharray:none;marker-end:url(#Arrow1-09-4-5)"
-       d="m 138.09579,207.63299 c 0,-35.01453 0,-32.79058 0,-32.79058 z"
-       id="path939-5-5-6" />
-    <path
-       style="fill:#1a1a1a;stroke:#000000;stroke-width:1.152;stroke-linejoin:bevel;stroke-dasharray:none;marker-end:url(#Arrow1-09-4-5-9)"
-       d="m 228.43036,207.63299 c 0,-35.01453 0,-32.79058 0,-32.79058 z"
+       style="fill:#1a1a1a;stroke:#000000;stroke-width:1.03805;stroke-linejoin:bevel;stroke-dasharray:none;marker-end:url(#Arrow1-09-4-5-9)"
+       d="m 193.18784,201.43976 c 0,-28.43067 0,-26.6249 0,-26.6249 z"
        id="path939-5-5-6-0" />
     <path
-       style="fill:#1a1a1a;stroke:#000000;stroke-width:1.152;stroke-linejoin:bevel;stroke-dasharray:none;marker-end:url(#Arrow1-09-4-5-9-8)"
-       d="m 295.06817,207.63299 c 0,-35.01453 0,-32.79058 0,-32.79058 z"
+       style="fill:#1a1a1a;stroke:#000000;stroke-width:1.03844;stroke-linejoin:bevel;stroke-dasharray:none;marker-end:url(#Arrow1-09-4-5-9-8)"
+       d="m 259.82565,201.4593 c 0,-28.45152 0,-26.64442 0,-26.64442 z"
        id="path939-5-5-6-0-3" />
     <path
-       style="fill:#1a1a1a;stroke:#000000;stroke-width:1.152;stroke-linejoin:bevel;stroke-dasharray:none;marker-end:url(#Arrow1-09-4-5-9-8-0)"
-       d="m 349.132,207.63299 c 0,-35.01453 0,-32.79058 0,-32.79058 z"
+       style="fill:#1a1a1a;stroke:#000000;stroke-width:1.03226;stroke-linejoin:bevel;stroke-dasharray:none;marker-end:url(#Arrow1-09-4-5-9-8-0)"
+       d="m 313.88948,201.14308 c 0,-28.11414 0,-26.32847 0,-26.32847 z"
        id="path939-5-5-6-0-3-6" />
     <path
-       style="fill:#1a1a1a;stroke:#000000;stroke-width:1.152;stroke-linejoin:bevel;stroke-dasharray:none;marker-end:url(#Arrow1-09-4-5-9-8-0-5)"
-       d="m 405.39895,207.63299 c 0,-35.01453 0,-32.79058 0,-32.79058 z"
+       style="fill:#1a1a1a;stroke:#000000;stroke-width:1.03697;stroke-linejoin:bevel;stroke-dasharray:none;marker-end:url(#Arrow1-09-4-5-9-8-0-5)"
+       d="m 370.15643,201.38361 c 0,-28.37077 0,-26.56879 0,-26.56879 z"
        id="path939-5-5-6-0-3-6-9" />
     <path
        style="fill:#1a1a1a;stroke:#000000;stroke-width:1.152;stroke-linejoin:bevel;stroke-dasharray:none;marker-end:url(#Arrow1-09-4-5-9-8-0-5-10)"
-       d="m 405.39895,248.48317 c 0,-20.1647 0,-18.88394 0,-18.88394 z"
+       d="m 370.15643,237.97467 c 0,-20.1647 0,-18.88394 0,-18.88394 z"
        id="path939-5-5-6-0-3-6-9-5" />
     <path
        style="fill:#1a1a1a;stroke:#000000;stroke-width:1.152;stroke-linejoin:bevel;stroke-dasharray:none;marker-end:url(#Arrow1-09-4-5-9-8-0-5-10-8)"
-       d="m 349.13199,247.49488 c 0,-20.1647 0,-18.88394 0,-18.88394 z"
+       d="m 313.88947,236.98638 c 0,-20.1647 0,-18.88394 0,-18.88394 z"
        id="path939-5-5-6-0-3-6-9-5-0" />
     <path
-       style="fill:#1a1a1a;stroke:#000000;stroke-width:1.152;stroke-linejoin:bevel;stroke-dasharray:none;marker-end:url(#Arrow1-09-4-5-9-8-0-5-1)"
-       d="m 442.96759,248.48317 c 0,-77.95959 0,-73.008 0,-73.008 z"
+       style="fill:#1a1a1a;stroke:#000000;stroke-width:1.06391;stroke-linejoin:bevel;stroke-dasharray:none;marker-end:url(#Arrow1-09-4-5-9-8-0-5-1)"
+       d="m 407.72507,237.71411 c 0,-66.49376 0,-62.27042 0,-62.27042 z"
        id="path939-5-5-6-0-3-6-9-9" />
     <path
        style="fill:#1a1a1a;stroke:#000000;stroke-width:1.15156;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#Arrow1-4)"
-       d="m 76.996864,145.04061 c 0,-14.65092 0,-13.72036 0,-13.72036 z"
+       d="m 92.03323,145.04061 c 0,-14.65092 0,-13.72036 0,-13.72036 z"
        id="path939-6" />
+    <path
+       style="fill:#1a1a1a;stroke:#000000;stroke-width:1.15156;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#Arrow1-4-3)"
+       d="m 92.03323,199.97107 c 0,-14.65092 0,-13.72036 0,-13.72036 z"
+       id="path939-6-7" />
     <path
        style="fill:#1a1a1a;stroke:#000000;stroke-width:1.15156;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#Arrow1-0)"
        d="m 193.18784,59.962142 c 0,-14.650927 0,-13.720368 0,-13.720368 z"
        id="path939-4" />
     <g
        id="g636"
-       transform="matrix(0.59529366,0,0,0.59529366,59.133618,6.7039191)">
+       transform="matrix(0.59529366,0,0,0.59529366,74.169984,6.7039191)">
       <path
          id="rect234"
          style="fill:#dfe3e6;stroke-width:0.543845;stroke-linejoin:round"
@@ -543,7 +519,7 @@
     <path
        id="rect234-5"
        style="fill:#dfe3e6;stroke-width:0.323747;stroke-linejoin:round"
-       d="m 90.621018,48.521387 v 27.959559 h 20.443632 v -21.86917 l -1.75809,-3.045195 -1.75839,-3.045194 z" />
+       d="m 105.65738,48.521387 v 27.959559 h 20.44364 v -21.86917 l -1.75809,-3.045195 -1.75839,-3.045194 z" />
     <path
        sodipodi:type="star"
        style="fill:#333333;stroke-width:0.499999;stroke-linejoin:round"
@@ -559,53 +535,53 @@
        inkscape:rounded="0"
        inkscape:randomized="0"
        d="m 79.533297,61.949673 -9.105293,5.256943 -9.105293,5.256943 0,-10.513887 0,-10.513886 9.105293,5.256944 z"
-       transform="matrix(0.28963877,0.16722302,-0.16722302,0.28963877,98.38806,23.368942)"
+       transform="matrix(0.28963877,0.16722302,-0.16722302,0.28963877,113.42443,23.368942)"
        inkscape:transform-center-y="-1.7051696" />
     <text
        xml:space="preserve"
        style="font-size:2.31007px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';fill:#333333;stroke-width:0.297646;stroke-linejoin:round"
-       x="92.638618"
+       x="107.67498"
        y="56.775112"
        id="text539-5"><tspan
          sodipodi:role="line"
          id="tspan537-6"
          style="stroke-width:0.297647"
-         x="92.638618"
+         x="107.67498"
          y="56.775112">&gt;seq</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:2.31007px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';fill:#333333;stroke-width:0.297646;stroke-linejoin:round"
-       x="92.825737"
+       x="107.8621"
        y="59.907249"
        id="text610-2"><tspan
          sodipodi:role="line"
          id="tspan608-9"
          style="stroke-width:0.297647"
-         x="92.825737"
+         x="107.8621"
          y="59.907249">ATGCGCTTTA</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.297647"
-         x="92.825737"
+         x="107.8621"
          y="62.794838"
          id="tspan614-1">CCAGGTATAA</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.297647"
-         x="92.825737"
+         x="107.8621"
          y="65.682426"
          id="tspan616-2">AGCAATAACT</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.297647"
-         x="92.825737"
+         x="107.8621"
          y="68.570015"
          id="tspan618-7">GCGGGGTGT</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.297647"
-         x="92.825737"
+         x="107.8621"
          y="71.457603"
          id="tspan620-0">AAGATAAAAGT</tspan></text>
     <g
        id="g636-9"
-       transform="matrix(0.59529366,0,0,0.59529366,36.295089,25.443154)">
+       transform="matrix(0.59529366,0,0,0.59529366,51.331455,25.443154)">
       <path
          id="rect234-3"
          style="fill:#dfe3e6;stroke-width:0.543845;stroke-linejoin:round"
@@ -672,7 +648,7 @@
     </g>
     <g
        id="g636-0"
-       transform="matrix(0.59529366,0,0,0.59529366,60.04909,39.422974)">
+       transform="matrix(0.59529366,0,0,0.59529366,75.085456,39.422974)">
       <path
          id="rect234-2"
          style="fill:#dfe3e6;stroke-width:0.543845;stroke-linejoin:round"
@@ -742,12 +718,12 @@
        id="rect1766"
        width="74.503464"
        height="65.932274"
-       x="40.583935"
+       x="55.6203"
        y="29.535032"
        ry="8.2638855" />
     <g
        id="g3379"
-       transform="translate(31.274174)">
+       transform="translate(46.31054)">
       <g
          id="g3636"
          transform="matrix(0.76863093,0,0,0.76863093,10.617433,26.962193)">
@@ -851,204 +827,197 @@
     </g>
     <rect
        style="fill:#ffff00;stroke:#1a1a1a;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect3168-8-1-1"
-       width="97.47171"
-       height="14.238683"
-       x="89.359924"
-       y="212.22224"
-       ry="7.1193414" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.42312px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#1a1a1a;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       x="94.873581"
-       y="217.34045"
-       id="text3031-1-7-0"><tspan
-         sodipodi:role="line"
-         id="tspan3029-0-8-5"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.42312px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
-         x="94.873581"
-         y="217.34045">Dictionary-Based Zstd Compression</tspan><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.42312px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
-         x="94.873581"
-         y="224.11935"
-         id="tspan3630-3-5-1">                    (CodecZstd.jl)</tspan></text>
-    <rect
-       style="fill:#ffff00;stroke:#1a1a1a;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect3168-8-1-1-4"
        width="70.390579"
        height="14.238683"
-       x="193.23506"
-       y="212.22224"
+       x="157.99254"
+       y="202.94693"
        ry="7.1193414" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.42312px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#1a1a1a;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       x="197.0685"
-       y="217.36757"
+       x="161.82597"
+       y="208.09225"
        id="text3031-1-7-0-0"><tspan
          sodipodi:role="line"
          id="tspan3029-0-8-5-6"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.42312px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
-         x="197.0685"
-         y="217.36757">Default Zstd Compression</tspan><tspan
+         x="161.82597"
+         y="208.09225">Default Zstd Compression</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.42312px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
-         x="197.0685"
-         y="224.14647"
+         x="161.82597"
+         y="214.87115"
          id="tspan3630-3-5-1-2">              (CodecZstd.jl)</tspan></text>
+    <g
+       id="g1486"
+       transform="translate(-5.5098535,-9.2530776)">
+      <rect
+         style="fill:#ff7f2a;stroke:#1a1a1a;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect3168-8-1-1-4-1"
+         width="91.456718"
+         height="14.238683"
+         x="51.814724"
+         y="212.20001"
+         ry="7.1193414" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.42312px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#1a1a1a;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+         x="54.320896"
+         y="217.44838"
+         id="text3031-1-7-0-0-2"><tspan
+           sodipodi:role="line"
+           id="tspan3029-0-8-5-6-7"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.42312px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
+           x="54.320896"
+           y="217.44838">Zstd Dictionary-Based Compression</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.42312px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
+           x="54.320896"
+           y="224.22728"
+           id="tspan3630-3-5-1-2-0">                           (Zstd CLI)</tspan></text>
+    </g>
     <rect
        style="fill:#00ff00;stroke:#1a1a1a;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect3168-8-1-1-4-3"
        width="50.078201"
        height="14.238683"
-       x="270.02905"
-       y="212.12297"
+       x="234.78653"
+       y="202.94693"
        ry="7.1193414" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.42312px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#1a1a1a;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       x="274.03461"
-       y="217.24118"
+       x="238.79208"
+       y="208.06514"
        id="text3031-1-7-0-0-9"><tspan
          sodipodi:role="line"
          id="tspan3029-0-8-5-6-1"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.42312px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
-         x="274.03461"
-         y="217.24118">Zlib Compression</tspan><tspan
+         x="238.79208"
+         y="208.06514">Zlib Compression</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.42312px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
-         x="274.03461"
-         y="224.02008"
+         x="238.79208"
+         y="214.84404"
          id="tspan3630-3-5-1-2-9">     (CodecZlib.jl)</tspan></text>
     <rect
        style="fill:#ff00ff;stroke:#1a1a1a;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect3168-8-1-1-4-3-1"
        width="54.484425"
        height="14.238683"
-       x="378.15674"
-       y="212.41426"
+       x="342.91422"
+       y="202.94693"
        ry="7.1193414" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.42312px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#1a1a1a;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       x="382.4429"
-       y="217.45113"
+       x="347.20038"
+       y="207.9838"
        id="text3031-1-7-0-0-9-3"><tspan
          sodipodi:role="line"
          id="tspan3029-0-8-5-6-1-2"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.42312px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
-         x="382.4429"
-         y="217.45113">Bzip2 Compression</tspan><tspan
+         x="347.20038"
+         y="207.9838">Bzip2 Compression</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.42312px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
-         x="382.4429"
-         y="224.23003"
+         x="347.20038"
+         y="214.7627"
          id="tspan3630-3-5-1-2-9-1">    (CodecBzip2.jl)</tspan></text>
     <rect
        style="fill:#00ffff;stroke:#1a1a1a;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect3168-8-1-1-4-3-6"
        width="45.242619"
        height="14.238683"
-       x="326.51068"
-       y="212.49959"
+       x="291.26816"
+       y="202.94693"
        ry="7.1193414" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.42312px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#1a1a1a;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       x="329.91519"
-       y="217.53645"
+       x="294.67267"
+       y="207.9838"
        id="text3031-1-7-0-0-9-6"><tspan
          sodipodi:role="line"
          id="tspan3029-0-8-5-6-1-4"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.42312px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
-         x="329.91519"
-         y="217.53645">Xz Compression</tspan><tspan
+         x="294.67267"
+         y="207.9838">Xz Compression</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.42312px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
-         x="329.91519"
-         y="224.31535"
+         x="294.67267"
+         y="214.7627"
          id="tspan3630-3-5-1-2-9-0">    (CodecXz.jl)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.88056px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';fill:#000000;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       x="82.068878"
+       x="97.10524"
        y="106.29115"
        id="text3031-6"><tspan
          sodipodi:role="line"
          id="tspan3029-3"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0;stroke-dasharray:none"
-         x="82.068878"
+         x="97.10524"
          y="106.29115">Input</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.88056px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';fill:#000000;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       x="79.791359"
+       x="94.827721"
        y="139.81926"
        id="text3031-6-7"><tspan
          sodipodi:role="line"
          id="tspan3029-3-5"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0;stroke-dasharray:none"
-         x="79.791359"
+         x="94.827721"
          y="139.81926">Output</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.88056px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';fill:#000000;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       x="54.035328"
+       x="69.071693"
        y="184.16296"
        id="text3031-6-7-3"><tspan
          sodipodi:role="line"
          id="tspan3029-3-5-1"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0;stroke-dasharray:none"
-         x="54.035328"
+         x="69.071693"
          y="184.16296">Custom dictionary</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.88056px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';fill:#000000;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       x="111.64034"
-       y="256.08621"
-       id="text3031-6-7-3-2"><tspan
-         sodipodi:role="line"
-         id="tspan3029-3-5-1-2"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0;stroke-dasharray:none"
-         x="111.64034"
-         y="256.08621">Zstd transcoded data</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:3.88056px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';fill:#000000;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       x="201.9749"
-       y="256.08621"
+       x="166.73238"
+       y="245.57773"
        id="text3031-6-7-3-2-2"><tspan
          sodipodi:role="line"
          id="tspan3029-3-5-1-2-0"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0;stroke-dasharray:none"
-         x="201.9749"
-         y="256.08621">Zstd transcoded data</tspan></text>
+         x="166.73238"
+         y="245.57773">Zstd transcoded data</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.88056px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';fill:#000000;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       x="269.46219"
-       y="256.08621"
+       x="234.21967"
+       y="245.57773"
        id="text3031-6-7-3-2-2-5"><tspan
          sodipodi:role="line"
          id="tspan3029-3-5-1-2-0-5"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0;stroke-dasharray:none"
-         x="269.46219"
-         y="256.08621">Zlib transcoded data</tspan></text>
+         x="234.21967"
+         y="245.57773">Zlib transcoded data</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.88056px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';fill:#000000;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       x="325.51569"
-       y="256.08621"
+       x="290.27316"
+       y="245.57773"
        id="text3031-6-7-3-2-2-5-2"><tspan
          sodipodi:role="line"
          id="tspan3029-3-5-1-2-0-5-9"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0;stroke-dasharray:none"
-         x="325.51569"
-         y="256.08621">Xz transcoded data</tspan></text>
+         x="290.27316"
+         y="245.57773">Xz transcoded data</tspan></text>
     <g
        id="g4468"
-       transform="translate(44.770156,-5.2533418)">
+       transform="translate(59.806522,-5.2533418)">
       <path
          id="rect234-5-4"
          style="fill:#f2f2f2;stroke-width:0.323747;stroke-linejoin:round"
@@ -1143,57 +1112,68 @@
        d="M 193.18784,174.82018 V 160.23596 Z"
        id="path8061-0-4" />
     <path
-       style="fill:#000000;fill-opacity:1;stroke:#1a1a1a;stroke-width:1.07645;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0"
-       d="M 138.09579,174.79294 H 443.54516 Z"
+       style="fill:#000000;fill-opacity:1;stroke:#1a1a1a;stroke-width:0.904582;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0"
+       d="M 192.62163,174.79294 H 408.32158 Z"
        id="path8061-0-4-6" />
     <path
        style="fill:#1a1a1a;stroke:#000000;stroke-width:1.152;stroke-linejoin:bevel;stroke-dasharray:none;marker-end:url(#Arrow1-09-4-5-9-8-0-5-10-4)"
-       d="m 295.06815,247.49488 c 0,-20.1647 0,-18.88394 0,-18.88394 z"
+       d="m 259.82563,236.98638 c 0,-20.1647 0,-18.88394 0,-18.88394 z"
        id="path939-5-5-6-0-3-6-9-5-04" />
     <path
        style="fill:#1a1a1a;stroke:#000000;stroke-width:1.152;stroke-linejoin:bevel;stroke-dasharray:none;marker-end:url(#Arrow1-09-4-5-9-8-0-5-10-4-2)"
-       d="m 228.43035,247.49488 c 0,-20.1647 0,-18.88394 0,-18.88394 z"
+       d="m 193.18783,236.98638 c 0,-20.1647 0,-18.88394 0,-18.88394 z"
        id="path939-5-5-6-0-3-6-9-5-04-6" />
-    <path
-       style="fill:#1a1a1a;stroke:#000000;stroke-width:1.152;stroke-linejoin:bevel;stroke-dasharray:none;marker-end:url(#Arrow1-09-4-5-9-8-0-5-10-4-1)"
-       d="m 138.09578,247.49488 c 0,-20.1647 0,-18.88394 0,-18.88394 z"
-       id="path939-5-5-6-0-3-6-9-5-04-4" />
     <text
        xml:space="preserve"
        style="font-size:3.88056px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';fill:#000000;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       x="391.33585"
-       y="256.08621"
+       x="65.577789"
+       y="245.57773"
+       id="text3031-6-7-3-2-2-6"><tspan
+         sodipodi:role="line"
+         id="tspan3029-3-5-1-2-0-0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0;stroke-dasharray:none"
+         x="65.577789"
+         y="245.57773">Zstd transcoded data</tspan></text>
+    <path
+       style="fill:#1a1a1a;stroke:#000000;stroke-width:1.152;stroke-linejoin:bevel;stroke-dasharray:none;marker-end:url(#Arrow1-09-4-5-9-8-0-5-10-4-2-9)"
+       d="m 92.03323,236.98638 c 0,-20.16471 0,-18.88395 0,-18.88395 z"
+       id="path939-5-5-6-0-3-6-9-5-04-6-6" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';fill:#000000;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       x="356.09332"
+       y="244.01439"
        id="text3031-6-7-3-2-2-5-0"><tspan
          sodipodi:role="line"
          id="tspan3029-3-5-1-2-0-5-2"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0;stroke-dasharray:none"
-         x="391.33585"
-         y="256.08621">     Bzip2 </tspan><tspan
+         x="356.09332"
+         y="244.01439">     Bzip2 </tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0;stroke-dasharray:none"
-         x="391.33585"
-         y="263.14175"
+         x="356.09332"
+         y="251.06993"
          id="tspan13909">transcoded </tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0;stroke-dasharray:none"
-         x="391.33585"
-         y="270.19733"
+         x="356.09332"
+         y="258.12552"
          id="tspan13868">       data</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.88056px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';fill:#000000;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       x="424.40588"
-       y="256.65799"
+       x="389.16336"
+       y="244.18372"
        id="text3031-6-7-3-2-2-5-0-8"><tspan
          sodipodi:role="line"
          id="tspan3029-3-5-1-2-0-5-2-3"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0;stroke-dasharray:none"
-         x="424.40588"
-         y="256.65799">Uncompressed</tspan><tspan
+         x="389.16336"
+         y="244.18372">Uncompressed</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0;stroke-dasharray:none"
-         x="424.40588"
-         y="263.71353"
+         x="389.16336"
+         y="251.23926"
          id="tspan13868-8">          data</tspan></text>
   </g>
 </svg>

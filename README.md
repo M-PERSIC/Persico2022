@@ -5,5 +5,6 @@ Coding environment: [Ubuntu 22.04.1 LTS ("Jammy Jellyfish")](https://hub.docker.
 - [Julia](https://julialang.org/) v1.8.3
 - [Quarto](https://quarto.org/) v1.2.203 with [PLOS template](https://github.com/quarto-journals/plos)
 - r-base v4.1.2-1ubuntu2
+- r-cran-broom v0.7.12+dfsg-1
 - texlive-full v2021.20220204-1
 
