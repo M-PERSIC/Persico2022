@@ -27,9 +27,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.49260384"
-     inkscape:cx="557.24292"
-     inkscape:cy="369.46525"
+     inkscape:zoom="0.98520768"
+     inkscape:cx="527.8075"
+     inkscape:cy="527.8075"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -358,6 +358,26 @@
          transform="rotate(180,0.125,0)"
          sodipodi:nodetypes="ccc" />
     </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1-4-3-3"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path5057-47-6-6"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -445,6 +465,10 @@
        style="fill:#1a1a1a;stroke:#000000;stroke-width:1.15156;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#Arrow1-4-3)"
        d="m 92.03323,199.97107 c 0,-14.65092 0,-13.72036 0,-13.72036 z"
        id="path939-6-7" />
+    <path
+       style="fill:#1a1a1a;stroke:#000000;stroke-width:1.152;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#Arrow1-4-3-3)"
+       d="m 128.50588,199.31024 c 48.52193,-39.79394 45.44004,-37.26643 45.44004,-37.26643 z"
+       id="path939-6-7-7" />
     <path
        style="fill:#1a1a1a;stroke:#000000;stroke-width:1.15156;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#Arrow1-0)"
        d="m 193.18784,59.962142 c 0,-14.650927 0,-13.720368 0,-13.720368 z"
