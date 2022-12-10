@@ -342,3 +342,4 @@ TSWLatexianTemp*
 # Custom - ignore all dotfiles
 .*
 !.gitignore
+/.luarc.json
